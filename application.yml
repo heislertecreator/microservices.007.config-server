@@ -1,0 +1,17 @@
+server:
+  port: 8797
+  
+spring:
+    cloud:
+        config:
+            server:
+                git:
+                    search-paths:
+                    - 'service-config/*service'
+                    uri: https://github.com/heislertecreator/microservices.007.config-store
+    main:
+        banner-mode: CONSOLE 
+    output:
+        ansi:
+            enabled: ALWAYS          
+#add newline
